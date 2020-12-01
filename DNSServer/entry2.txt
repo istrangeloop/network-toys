@@ -1,2 +1,0 @@
-add clara 500
-add gala 600
