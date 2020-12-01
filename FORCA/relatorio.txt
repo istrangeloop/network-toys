@@ -1,0 +1,17 @@
+Detalhes da implementação:
+
+    funções (em ambos o servidor e cliente):
+        main: criação dos sockets e conexão
+        forca: o jogo da forca
+
+    - foram usadas as estruturas de dados das bibliotecas inet para criar os sockets ipv4 e ipv6
+    - usar ou não ipv6 é definido por uma variável booleana chamada ipv6
+    - a palavra é fixa na variável palavra na função forca
+    - Os bytes retornados estão no escopo dos caracteres ascii imprimíveis, começando em 0x30.
+
+    redes:
+        por padrão, a porta é 8888 e o endereço 127.0.0.1 ou ::1
+        no servidor foi separado o processo de bind e listen, no cliente, a função connect junta os dois, para facilitar.
+
+Checagem:
+    - a cada mensagem recebida do cliente, o programa executa um loop para conferir se o byte existe na palavra. se existir, ele marca numa string idêntica à palavra a posição das letras corretas.

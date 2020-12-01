@@ -1,0 +1,5 @@
+add ingrid 100
+add vesper 200
+add mini 300
+add gabi 400
+link ::1 8081
